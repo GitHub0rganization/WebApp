@@ -1,0 +1,10 @@
+version: "2"
+services:
+  swagger:
+    image: swaggerapi/swagger-ui
+    volumes:
+      - ./endpoint.yml:/usr/share/nginx/html/endpoint.yml
+    environment:
+      API_URL: endpoint.yml
+    ports:
+      - "8080:8080"
