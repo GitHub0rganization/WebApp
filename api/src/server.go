@@ -3,7 +3,7 @@ package server
 import (
 	"fmt"
 
-	"github.com/voyagegroup/treasure2019-group-c/sample"
+	"github.com/GitHub0rganization/WebApp/sample"
 
 	"log"
 	"net/http"
@@ -16,9 +16,9 @@ import (
 	"github.com/gorilla/mux"
 	"github.com/jmoiron/sqlx"
 	"github.com/rs/cors"
-	"github.com/voyagegroup/treasure2019-group-c/controller"
-	"github.com/voyagegroup/treasure2019-group-c/db"
-	"github.com/voyagegroup/treasure2019-group-c/middleware"
+	"github.com/GitHub0rganization/WebApp/controller"
+	"github.com/GitHub0rganization/WebApp/db"
+	"github.com/GitHub0rganization/WebApp/middleware"
 )
 
 type Server struct {

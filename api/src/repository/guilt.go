@@ -1,8 +1,8 @@
 package repository
 
 import (
+	"github.com/GitHub0rganization/WebApp/model"
 	"github.com/jmoiron/sqlx"
-	"github.com/voyagegroup/treasure2019-group-c/model"
 )
 
 func AllGuilt(db *sqlx.DB) ([]model.Guilt, error) {

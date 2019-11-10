@@ -1,4 +1,4 @@
-module github.com/voyagegroup/treasure2019-group-c
+module github.com/GitHub0rganization/WebApp
 
 go 1.12
 

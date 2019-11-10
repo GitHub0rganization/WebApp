@@ -4,8 +4,8 @@ import (
 	"log"
 	"os"
 
+	server "github.com/GitHub0rganization/WebApp"
 	"github.com/joho/godotenv"
-	server "github.com/voyagegroup/treasure2019-group-c"
 )
 
 func main() {
