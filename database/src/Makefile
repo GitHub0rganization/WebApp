@@ -1,7 +1,7 @@
 export GO111MODULE := off
 
-DBNAME:=treasure_app
-DBNAME_TEST:=treasure_app_test
+DBNAME:=web_app
+DBNAME_TEST:=web_app_test
 DATASOURCE:=root:password@tcp(127.0.0.1:3306)/$(DBNAME)
 DATASOURCE_TEST:=root:password@tcp(127.0.0.1:3306)/$(DBNAME_TEST)
 
