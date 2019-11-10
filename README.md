@@ -12,3 +12,5 @@ $ docker-compose up
 $ make .env
 $ make run
 ```
+
+## エンドポイント管理(swagger)
