@@ -13,6 +13,9 @@ $ make .env
 $ make run
 ```
 
+## DB設計
+https://hackmd.io/UwTMbawbRMqKyKqBBn1p8Q
+
 ## エンドポイント管理(swagger)
 
 これ見てendpoint.yml書くだけ。
