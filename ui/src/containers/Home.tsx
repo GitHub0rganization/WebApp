@@ -9,7 +9,9 @@ export const Home = () => (
     <MDBContainer>
       <MDBRow>
         <MDBCol sm="12">
-          <h1>ホーム</h1>
+          <h1 className="black-text">ホーム</h1>
+        
+
         </MDBCol>
       </MDBRow>
     </MDBContainer>

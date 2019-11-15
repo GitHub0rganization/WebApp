@@ -6,8 +6,8 @@ import {Login} from './containers/Login'
 const App: React.FC = () => {
   return (
     <Switch>
-      <Route path="/" children={Home} />
-      <Route path="/login" children={Login} />
+      <Route exact path="/" children={Home} />
+      <Route exact path="/login" children={Login} />
       {/* <Route path="/:userId" children={User} />
       <Route path="*" children={<NotFound />} /> */}
     </Switch>

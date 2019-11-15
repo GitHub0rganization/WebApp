@@ -8,13 +8,13 @@ import {
 } from "mdbreact";
 
 export const Navbar = () => (
-    <MDBNavbar color="white" expand="sm" fixed="top">
+    <MDBNavbar color="white" expand="sm">
         <MDBNavbarBrand>
         <strong className="black-text">linqs</strong>
         </MDBNavbarBrand>
         <MDBNavbarNav right>
         <MDBNavItem>
-            <MDBNavLink to="#!" className="black-text">
+            <MDBNavLink to="/login" className="black-text">
             ログイン
             </MDBNavLink>
         </MDBNavItem>
