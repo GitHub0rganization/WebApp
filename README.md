@@ -18,5 +18,11 @@ https://hackmd.io/UwTMbawbRMqKyKqBBn1p8Q
 
 ## エンドポイント管理(swagger)
 
+```sh
+# /swagger
+$ docker-compose up
+$ open localhost:8080
+```
+
 これ見てendpoint.yml書くだけ。
 https://qiita.com/rllllho/items/53a0023b32f4c0f8eabb
