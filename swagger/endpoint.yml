@@ -3,6 +3,8 @@ info:
   description: "アカウントとかまとめられるサービスLinqsのAPI"
   version: "1.0.0"
   title: "Linqs API"
+host: "example.com"
+basePath: "/v1"
 paths:
   /urls:
     get:
