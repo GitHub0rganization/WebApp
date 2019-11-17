@@ -2,7 +2,7 @@
 
 
 
-## Setup
+## 🚀 How to Setup
 
 ### Backend (database & api)
 ```go
@@ -17,8 +17,8 @@ $ make .env
 $ make run
 ```
 
-## Frontend (ui)
-```bash
+### Frontend (ui)
+```sh
 # cd ui
 # install dependencies
 $ yarn add
@@ -33,7 +33,7 @@ $ yarn start
 https://hackmd.io/UwTMbawbRMqKyKqBBn1p8Q
 
 
-## Endpoint Management (swagger)
+## Endpoint Management (Swagger)
 
 
 ```sh
@@ -46,3 +46,8 @@ Check this URL.
 https://qiita.com/rllllho/items/53a0023b32f4c0f8eabb
 
 Write the endpoint.yml file.
+
+## Prefix Commit Message
+```sh
+$ git config commit.template .gitmessage 
+```
