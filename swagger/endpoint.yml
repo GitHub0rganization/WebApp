@@ -12,7 +12,7 @@ paths:
           description: "成功時のレスポンス"
           schema:
             $ref: "#/definitions/Url" 
-  /users/{userId}/items:
+  /users/{user_id}/items:
     get:
       description: "userのitem一覧を取得する"
       parameters:
@@ -41,14 +41,41 @@ paths:
       description: "itemとuserを紐付ける"
       parameters:
       - name: "user_id"
-        in: "path"
         description: "current_user_id"
         required: true
         type: "integer"
         format: "int64"
       - name: "item_id"
-        in: "path"
         description: "紐付けたいitemのid"
+        required: true
+        type: "integer"
+        format: "int64"
+      responses:
+        200:
+          description: "成功時のレスポンス"
+    delete:
+      description: "itemとuserの紐付きを解除する"
+      parameters:
+      - name: "user_id"
+        description: "current_user_id"
+        required: true
+        type: "integer"
+        format: "int64"
+      - name: "item_id"
+        description: "紐付けたいitemのid"
+        required: true
+        type: "integer"
+        format: "int64"
+      responses:
+        200:
+          description: "成功時のレスポンス"
+  /users/{user_id}/edit:
+    put:
+      description: "user情報の編集"
+      parameters:
+      - name: "user_id"
+        in: "path"
+        description: "current_user_id"
         required: true
         type: "integer"
         format: "int64"
@@ -60,13 +87,11 @@ paths:
       description: "ログイン"
       parameters:
       - name: "user_id"
-        in: "path"
         description: "current_user_id"
         required: true
         type: "integer"
         format: "int64"
       - name: "firebase_uid"
-        in: "path"
         description: ""
         required: true
         type: "integer"
@@ -75,17 +100,15 @@ paths:
         200:
           description: "成功時のレスポンス"
   /logout:
-    post:
+    delete:
       description: "ログアウト"
       parameters:
       - name: "user_id"
-        in: "path"
         description: "current_user_id"
         required: true
         type: "integer"
         format: "int64"
       - name: "firebase_uid"
-        in: "path"
         description: ""
         required: true
         type: "integer"
