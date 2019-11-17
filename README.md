@@ -20,7 +20,6 @@ $ make run
 ## Frontend (ui)
 ```bash
 # cd ui
-
 # install dependencies
 $ yarn add
 
@@ -35,6 +34,13 @@ https://hackmd.io/UwTMbawbRMqKyKqBBn1p8Q
 
 
 ## Endpoint Management (swagger)
+
+
+```sh
+# /swagger
+$ docker-compose up
+$ open localhost:8080
+```
 
 Check this URL.
 https://qiita.com/rllllho/items/53a0023b32f4c0f8eabb
