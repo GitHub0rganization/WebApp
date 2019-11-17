@@ -48,6 +48,7 @@ https://qiita.com/rllllho/items/53a0023b32f4c0f8eabb
 Write the endpoint.yml file.
 
 ## Prefix Commit Message
+Coomit template will appear after below command.
 ```sh
 $ git config commit.template .gitmessage 
 ```
