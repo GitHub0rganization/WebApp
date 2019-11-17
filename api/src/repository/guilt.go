@@ -1,7 +1,7 @@
 package repository
 
 import (
-	"github.com/GitHub0rganization/WebApp/model"
+	"github.com/GitHub0rganization/linqs/model"
 	"github.com/jmoiron/sqlx"
 )
 

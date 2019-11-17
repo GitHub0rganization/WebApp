@@ -4,7 +4,7 @@ import (
 	"log"
 	"os"
 
-	server "github.com/GitHub0rganization/WebApp"
+	server "github.com/GitHub0rganization/linqs"
 	"github.com/joho/godotenv"
 )
 
