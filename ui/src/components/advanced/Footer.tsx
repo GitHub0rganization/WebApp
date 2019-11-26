@@ -2,7 +2,7 @@ import React from "react";
 import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
 
 export const Footer = () => (
-    <MDBFooter color="black" className="font-small pt-4 mt-4 fixed-bottom">
+    <MDBFooter color="black" className="font-small pt-4">
     <MDBContainer className="text-center">
         <MDBRow>
         <MDBCol md="12">

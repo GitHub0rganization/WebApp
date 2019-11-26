@@ -10,7 +10,7 @@ import {
 export const Navbar = () => (
     <MDBNavbar color="white" expand="sm">
         <MDBNavbarBrand>
-        <strong className="black-text">linqs</strong>
+        <a href="/"><strong className="black-text">linqs</strong></a>
         </MDBNavbarBrand>
         <MDBNavbarNav right>
         <MDBNavItem>
