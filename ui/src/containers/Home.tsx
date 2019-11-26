@@ -14,7 +14,7 @@ export const Home = () => (
             <img src="collab.png" alt="" className="img-fluid" style={{ width: '100%', maxWidth: 500 }}/>
           </div>
           <div>
-            <h1 className="black-text">linqsで<br/>今日から繋がる</h1>
+            <h1 className="black-text">linqsで<br/>今日から繋がる。</h1>
             <p className="pt-2">あなたを表現するページを作り、出会った相手とその場で交換。
                 好きなことを共有して、名刺より温かいつながりを作ろう。
             </p>
@@ -32,8 +32,8 @@ export const Home = () => (
         </MDBCol>
         <MDBCol sm="12" className="py-3" style={{ backgroundColor: 'black'}}>
           <div>
-            <h4 className="white-text text-center">名刺よりも温かいつながりを。</h4>
-            <p className="pt-2 white-text">わざわざWebサイトを作る必要なく、簡単な操作でクールなプロフィールページを作成できます。
+            <h4 className="white-text text-center py-3">About linqs</h4>
+            <p className="white-text" style={{lineHeight: 1.7, textAlign: "justify"}}>わざわざWebサイトを作る必要なく、簡単な操作でクールなプロフィールページを作成できます。
 プロフィールページには、自己紹介や他サービスのリンクのみならず、お気に入りの情報を追加できます。
 友達にもサービスを使ってもらい、仲良くなるための共通点を見つけやすくします。
             </p>
