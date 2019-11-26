@@ -1,4 +1,4 @@
-module github.com/GitHub0rganization/WebApp
+module github.com/GitHub0rganization/linqs
 
 go 1.12
 

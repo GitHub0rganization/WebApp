@@ -5,7 +5,7 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/GitHub0rganization/WebApp/httputil"
+	"github.com/GitHub0rganization/linqs/httputil"
 )
 
 type AppHandler struct {
