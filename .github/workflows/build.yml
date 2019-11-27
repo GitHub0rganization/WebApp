@@ -11,7 +11,6 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      GOPATH: ${{ runner.workspace }}
       GO111MODULE: on
 
     strategy:
