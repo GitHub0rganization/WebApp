@@ -10,14 +10,17 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
 
+    strategy:
+      matrix:
+        go: [ '1.10.x' ]
+
     steps:
     - uses: actions/checkout@v1
     - name: Go build
-      uses: cedrickring/golang-action/go1.12@1.4.1
-      env:
-        GO111MODULE: "on"
+      uses: actions/setup-go@v1
       with:
-        args: go build api/src/cmd/api/main.go
+        go-version: ${{ matrix.go }}
+    - run: go build api/src/cmd/api/main.go
 
   test:
     name: Test
