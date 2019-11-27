@@ -3,7 +3,7 @@ package server
 import (
 	"fmt"
 
-	"github.com/GitHub0rganization/WebApp/sample"
+	"github.com/GitHub0rganization/linqs/sample"
 
 	"log"
 	"net/http"
@@ -16,9 +16,9 @@ import (
 	"github.com/gorilla/mux"
 	"github.com/jmoiron/sqlx"
 	"github.com/rs/cors"
-	"github.com/GitHub0rganization/WebApp/controller"
-	"github.com/GitHub0rganization/WebApp/db"
-	"github.com/GitHub0rganization/WebApp/middleware"
+	"github.com/GitHub0rganization/linqs/controller"
+	"github.com/GitHub0rganization/linqs/db"
+	"github.com/GitHub0rganization/linqs/middleware"
 )
 
 type Server struct {

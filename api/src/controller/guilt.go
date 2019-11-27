@@ -3,8 +3,8 @@ package controller
 import (
 	"net/http"
 
-	"github.com/GitHub0rganization/WebApp/model"
-	"github.com/GitHub0rganization/WebApp/repository"
+	"github.com/GitHub0rganization/linqs/model"
+	"github.com/GitHub0rganization/linqs/repository"
 	"github.com/jmoiron/sqlx"
 )
 
