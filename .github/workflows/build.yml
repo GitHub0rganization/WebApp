@@ -5,14 +5,14 @@ on:
     branches-ignore:
       - 'master'
 
-env:
-  GOPATH: ${{ runner.workspace }}
-  GO111MODULE: on
-
 jobs:
   build:
     name: Build
     runs-on: ubuntu-latest
+
+    env:
+      GOPATH: ${{ runner.workspace }}
+      GO111MODULE: on
 
     strategy:
       matrix:
