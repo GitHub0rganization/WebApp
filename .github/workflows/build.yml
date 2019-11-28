@@ -10,9 +10,6 @@ jobs:
     name: API Build
     runs-on: ubuntu-latest
 
-    env:
-      GO111MODULE: on
-
     strategy:
       matrix:
         go-version: [1.12.x]
