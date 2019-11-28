@@ -24,7 +24,7 @@ jobs:
         go-version: ${{ matrix.go-version }}
     - uses: actions/checkout@v1
     - run: |
-        cd linqs/api/src
+        cd api/src
         go build cmd/api/main.go
 
   test:
