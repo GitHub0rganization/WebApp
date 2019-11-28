@@ -1,4 +1,4 @@
-name: Build check
+name: CI
 
 on: 
   push:
@@ -23,7 +23,9 @@ jobs:
       with:
         go-version: ${{ matrix.go-version }}
     - uses: actions/checkout@v1
-    - run: go build api/src/cmd/api/main.go
+    - run: |
+        cd linqs/api/src
+        go build cmd/api/main.go
 
   test:
     name: Test
