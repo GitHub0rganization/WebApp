@@ -6,8 +6,8 @@ on:
       - 'master'
 
 jobs:
-  build_api:
-    name: Build API
+  api_build:
+    name: API Build
     runs-on: ubuntu-latest
 
     env:
@@ -28,8 +28,8 @@ jobs:
         cd api/src
         go build cmd/api/main.go
 
-  build_ui:
-    name: Build UI
+  client_build:
+    name: Client Build
 
     runs-on: ubuntu-latest
 
@@ -50,7 +50,7 @@ jobs:
         yarn build
 
   test:
-    name: Test
+    name: API Test
     runs-on: ubuntu-latest
 
     steps:
