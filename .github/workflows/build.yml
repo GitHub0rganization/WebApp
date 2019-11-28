@@ -31,20 +31,23 @@ jobs:
   build_ui:
     name: Build UI
 
+    runs-on: ubuntu-latest
+
     strategy:
       matrix:
         node-version: [8.x]
 
     steps:
-    - name: Install Go
-      uses: actions/setup-go@v1
+    - name: Use Node ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
       with:
-        go-version: ${{ matrix.go-version }}
+        node-version: ${{ matrix.node-version }}
     - uses: actions/checkout@v1
-    - name: Build main.go
+    - name: Yarn install, build
       run: |
-        cd api/src
-        go build cmd/api/main.go
+        cd ui
+        yarn install
+        yarn build
 
   test:
     name: Test
