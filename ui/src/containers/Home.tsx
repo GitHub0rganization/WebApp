@@ -3,7 +3,6 @@ import { MDBContainer, MDBCol, MDBRow, MDBBtn} from "mdbreact";
 import { Navbar } from "../components/advanced/Navbar";
 import { Footer } from "../components/advanced/Footer"
 
-
 export const Home = () => (
   <React.Fragment>
     <Navbar />
