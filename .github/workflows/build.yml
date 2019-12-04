@@ -60,7 +60,7 @@ jobs:
       with:
         go-version: ${{ matrix.go-version }}
     - uses: actions/checkout@v1
-    - name: Build main.go
+    - name: Run tests
       run: |
         cd api/src
-        go test ./...
+        go test ./... -cover
