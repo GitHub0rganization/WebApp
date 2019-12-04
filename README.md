@@ -1,7 +1,5 @@
 # linqs
 
-
-
 ## 🚀 How to Setup
 
 ### Backend (database & api)
@@ -27,6 +25,13 @@ $ yarn add
 $ yarn start
 ```
 
+## Test (api)
+Test files are in the same directory with the files you need to test.
+
+```go
+# /api/src/
+$ go test ./... # run all tests
+```
 
 ## DB Structure
 
