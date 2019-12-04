@@ -10,7 +10,7 @@ import {
 } from "mdbreact";
 import {Color} from '../../utils/variables'
 import {FriendsList} from '../../containers/FriendsList'
-import {Profile} from './Profile'
+import {Profile} from '../../containers/Profile'
 
 export const Tabs = () => {
     const [activeItemOuterTabs, setActiveItemOuterTabs] = useState("1")

@@ -13,6 +13,8 @@ const App: React.FC = () => {
       <Route exact path="/login" component={Login} />
       <Route exact path="/username" component={User} />
       <Route exact path="/username/friends" component={User} />
+      <Route exact path="/username/favorites" component={User} />
+      <Route exact path="/username/links" component={User} />
       <Route path="*" children={<NotFound />} />
     </Switch>
   )
