@@ -8,12 +8,6 @@ DATASOURCE_TEST:=root:password@tcp(127.0.0.1:3306)/$(DBNAME_TEST)
 install:
 	which goose || GO111MODULE=off go get -u github.com/pressly/goose/cmd/goose
 
-docker-compose/up:
-	docker-compose up -d
-
-docker-compose/down:
-	docker-compose down
-
 mysql:
 	mysql -u root -h localhost --protocol tcp -p $(DBNAME)
 
