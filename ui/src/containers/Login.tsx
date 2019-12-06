@@ -1,7 +1,7 @@
-import React from "react";
-import { MDBContainer, MDBCol, MDBRow, MDBBtn } from "mdbreact";
-import { Navbar } from "../components/advanced/Navbar";
-import { Footer } from "../components/advanced/Footer";
+import React from 'react'
+import { MDBContainer, MDBCol, MDBRow, MDBBtn } from 'mdbreact'
+import { Navbar } from '../components/advanced/Navbar'
+import { Footer } from '../components/advanced/Footer'
 
 export const Login = () => (
   <React.Fragment>
@@ -28,10 +28,7 @@ export const Login = () => (
               <i className="fab fa-facebook-f pr-2"></i>
               Facebookで登録/ログイン
             </MDBBtn>
-            <MDBBtn
-              className="p-2 text-black text-capitalize"
-              color="white"
-            >
+            <MDBBtn className="p-2 text-black text-capitalize" color="white">
               <i className="fab fa-google pr-2"></i>
               Googleで登録/ログイン
             </MDBBtn>
@@ -41,4 +38,4 @@ export const Login = () => (
     </MDBContainer>
     <Footer />
   </React.Fragment>
-);
+)
