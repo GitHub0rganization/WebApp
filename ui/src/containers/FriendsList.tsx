@@ -1,4 +1,10 @@
-import { MDBCardBody, MDBCardText, MDBCardTitle, MDBCol, MDBRow } from 'mdbreact'
+import {
+  MDBCardBody,
+  MDBCardText,
+  MDBCardTitle,
+  MDBCol,
+  MDBRow,
+} from 'mdbreact'
 import React from 'react'
 
 export const FriendsList = () => (

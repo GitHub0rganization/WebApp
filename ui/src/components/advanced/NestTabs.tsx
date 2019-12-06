@@ -1,4 +1,11 @@
-import { MDBIcon, MDBNav, MDBNavItem, MDBNavLink, MDBTabContent, MDBTabPane } from 'mdbreact'
+import {
+  MDBIcon,
+  MDBNav,
+  MDBNavItem,
+  MDBNavLink,
+  MDBTabContent,
+  MDBTabPane,
+} from 'mdbreact'
 import React, { useState } from 'react'
 import { Color, FontSize } from '../../utils/variables'
 import { Favorites } from '../advanced/Favorites'
