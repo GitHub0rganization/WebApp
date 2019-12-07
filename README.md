@@ -28,6 +28,16 @@ $ yarn start
 ## Test (api)
 Test files are in the same directory with the files you need to test.
 
+like this.
+
+```sh
+controller/
+  fizz.go
+  fizz_test.go
+  buzz.go
+  buzz_test.go
+```
+
 ```go
 # /api/src/
 $ go test ./... # run all tests
