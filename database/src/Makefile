@@ -1,18 +1,12 @@
 export GO111MODULE := off
 
-DBNAME:=web_app
-DBNAME_TEST:=web_app_test
+DBNAME:=linqs_development
+DBNAME_TEST:=linqs_test
 DATASOURCE:=root:password@tcp(127.0.0.1:3306)/$(DBNAME)
 DATASOURCE_TEST:=root:password@tcp(127.0.0.1:3306)/$(DBNAME_TEST)
 
 install:
 	which goose || GO111MODULE=off go get -u github.com/pressly/goose/cmd/goose
-
-docker-compose/up:
-	docker-compose up -d
-
-docker-compose/down:
-	docker-compose down
 
 mysql:
 	mysql -u root -h localhost --protocol tcp -p $(DBNAME)

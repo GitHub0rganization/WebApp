@@ -46,10 +46,21 @@ jobs:
         yarn install
         yarn build
 
-  test:
+  api_test:
     name: API Test
     runs-on: ubuntu-latest
 
-    steps:
-      - uses: actions/checkout@v1
+    strategy:
+      matrix:
+        go-version: [1.12.x]
 
+    steps:
+    - name: Install Go ${{ matrix.go-version }}
+      uses: actions/setup-go@v1
+      with:
+        go-version: ${{ matrix.go-version }}
+    - uses: actions/checkout@v1
+    - name: Run tests
+      run: |
+        cd api/src
+        go test ./... -cover
