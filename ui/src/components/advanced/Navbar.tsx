@@ -1,11 +1,11 @@
-import React from 'react'
+import React from 'react';
 import {
   MDBNavbar,
   MDBNavbarBrand,
   MDBNavbarNav,
   MDBNavItem,
   MDBNavLink,
-} from 'mdbreact'
+} from 'mdbreact';
 
 export const Navbar = () => (
   <MDBNavbar color="white" expand="sm">
@@ -22,4 +22,4 @@ export const Navbar = () => (
       </MDBNavItem>
     </MDBNavbarNav>
   </MDBNavbar>
-)
+);

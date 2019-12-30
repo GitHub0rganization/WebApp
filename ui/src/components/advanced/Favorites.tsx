@@ -1,11 +1,5 @@
-import React from 'react'
-import {
-  MDBRow,
-  MDBCol,
-  MDBCardBody,
-  MDBCardTitle,
-  MDBCardText,
-} from 'mdbreact'
+import React from 'react';
+import {MDBRow, MDBCol, MDBCardBody, MDBCardTitle, MDBCardText} from 'mdbreact';
 
 export const Favorites = () => (
   <MDBRow>
@@ -18,4 +12,4 @@ export const Favorites = () => (
       </MDBCardBody>
     </MDBCol>
   </MDBRow>
-)
+);

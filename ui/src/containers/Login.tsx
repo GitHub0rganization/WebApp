@@ -1,7 +1,7 @@
-import React from 'react'
-import { MDBContainer, MDBCol, MDBRow, MDBBtn } from 'mdbreact'
-import { Navbar } from '../components/advanced/Navbar'
-import { Footer } from '../components/advanced/Footer'
+import React from 'react';
+import {MDBContainer, MDBCol, MDBRow, MDBBtn} from 'mdbreact';
+import {Navbar} from '../components/advanced/Navbar';
+import {Footer} from '../components/advanced/Footer';
 
 export const Login = () => (
   <React.Fragment>
@@ -38,4 +38,4 @@ export const Login = () => (
     </MDBContainer>
     <Footer />
   </React.Fragment>
-)
+);

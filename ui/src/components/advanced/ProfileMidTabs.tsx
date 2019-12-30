@@ -5,25 +5,25 @@ import {
   MDBNavLink,
   MDBTabContent,
   MDBTabPane,
-} from 'mdbreact'
-import React, { useState } from 'react'
-import { Color, FontSize } from '../../utils/variables'
-import { Favorites } from '../advanced/Favorites'
-import { Links } from '../advanced/Links'
+} from 'mdbreact';
+import React, {useState} from 'react';
+import {Color, FontSize} from '../../utils/variables';
+import {Favorites} from './Favorites';
+import {Links} from './Links';
 
-export const NestTabs = () => {
-  const [activeItemOuterTabs, setActiveItemOuterTabs] = useState('1')
+export const ProfileMidTabs = () => {
+  const [activeItemOuterTabs, setActiveItemOuterTabs] = useState('1');
 
   const toggleOuterTabs = (tab: any) => (e: any) => {
     if (activeItemOuterTabs !== tab) {
-      setActiveItemOuterTabs(tab)
+      setActiveItemOuterTabs(tab);
     }
-  }
+  };
 
   const textColorOne =
-    activeItemOuterTabs === '1' ? Color.BASE : Color.GRAY_DARK
+    activeItemOuterTabs === '1' ? Color.BASE : Color.GRAY_DARK;
   const textColorTwo =
-    activeItemOuterTabs === '2' ? Color.BASE : Color.GRAY_DARK
+    activeItemOuterTabs === '2' ? Color.BASE : Color.GRAY_DARK;
 
   return (
     <React.Fragment>
@@ -37,12 +37,12 @@ export const NestTabs = () => {
             active={activeItemOuterTabs === '1'}
             onClick={toggleOuterTabs('1')}
             role="tab"
-            style={{ color: textColorOne }}
+            style={{color: textColorOne}}
           >
             <MDBIcon
               far
               icon="address-book"
-              style={{ fontSize: FontSize.XX_LARGE, color: textColorOne }}
+              style={{fontSize: FontSize.XX_LARGE, color: textColorOne}}
             />
             <p className="small my-1">Favorites</p>
           </MDBNavLink>
@@ -56,11 +56,11 @@ export const NestTabs = () => {
             active={activeItemOuterTabs === '2'}
             onClick={toggleOuterTabs('2')}
             role="tab"
-            style={{ color: textColorTwo }}
+            style={{color: textColorTwo}}
           >
             <MDBIcon
               icon="link"
-              style={{ fontSize: FontSize.XX_LARGE, color: textColorTwo }}
+              style={{fontSize: FontSize.XX_LARGE, color: textColorTwo}}
             />
             <p className="small my-1">Links</p>
           </MDBNavLink>
@@ -75,5 +75,5 @@ export const NestTabs = () => {
         </MDBTabPane>
       </MDBTabContent>
     </React.Fragment>
-  )
-}
+  );
+};

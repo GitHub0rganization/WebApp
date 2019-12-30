@@ -1,7 +1,7 @@
-import React from 'react'
-import { MDBContainer, MDBCol, MDBRow, MDBBtn } from 'mdbreact'
-import { Navbar } from '../components/advanced/Navbar'
-import { Footer } from '../components/advanced/Footer'
+import React from 'react';
+import {MDBContainer, MDBCol, MDBRow} from 'mdbreact';
+import {Navbar} from '../components/advanced/Navbar';
+import {Footer} from '../components/advanced/Footer';
 
 export const NotFound = () => (
   <React.Fragment>
@@ -15,4 +15,4 @@ export const NotFound = () => (
     </MDBContainer>
     <Footer />
   </React.Fragment>
-)
+);

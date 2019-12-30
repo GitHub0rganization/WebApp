@@ -1,5 +1,5 @@
-import React from 'react'
-import { MDBCol, MDBContainer, MDBRow, MDBFooter } from 'mdbreact'
+import React from 'react';
+import {MDBCol, MDBContainer, MDBRow, MDBFooter} from 'mdbreact';
 
 export const Footer = () => (
   <MDBFooter color="black" className="font-small pt-4">
@@ -27,4 +27,4 @@ export const Footer = () => (
       </MDBContainer>
     </div>
   </MDBFooter>
-)
+);

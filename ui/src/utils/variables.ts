@@ -3,7 +3,7 @@ export const Color = {
   FACEBOOK: '#3B5998',
   BASE: '#38D3CF',
   GRAY_DARK: '#343a40',
-} as const
+} as const;
 
 export const FontSize = {
   X_SMALL: '0.75rem',
@@ -13,4 +13,4 @@ export const FontSize = {
   LARGE: '1.5rem',
   X_LARGE: '1.7rem',
   XX_LARGE: '2rem',
-} as const
+} as const;

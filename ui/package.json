@@ -9,6 +9,9 @@
     "@types/react-dom": "16.9.4",
     "@types/react-router-dom": "^5.1.2",
     "@types/styled-components": "^4.4.0",
+    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-prefer-arrow": "^1.1.7",
+    "eslint-plugin-promise": "^4.2.1",
     "mdbreact": "^4.22.1",
     "node-sass": "^4.13.0",
     "react": "^16.11.0",
@@ -24,22 +27,11 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "fmt": "prettier --write '**/*.{js,json,ts,tsx}'",
-    "lint": "eslint --ignore-path .gitignore . --ext ts --ext tsx --ext js --ext jsx",
-    "lint:fix": "eslint --fix --ignore-path .gitignore . --ext ts --ext tsx --ext js --ext jsx"
+    "lint": "eslint --ext .tsx,.ts",
+    "lintfix": "prettier --write '**/*.{ts,tsx}' && eslint --ext .tsx,.ts --fix ."
   },
   "eslintConfig": {
     "extends": "react-app"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.{js,jsx}": [
-      "eslint --fix",
-      "git add"
-    ]
   },
   "browserslist": {
     "production": [
@@ -58,7 +50,6 @@
     "@typescript-eslint/parser": "^2.10.0",
     "babel-eslint": "^10.0.3",
     "eslint": "^6.7.2",
-    "eslint-config-airbnb": "^18.0.1",
     "eslint-config-prettier": "^6.7.0",
     "eslint-loader": "^3.0.2",
     "eslint-plugin-jest": "^23.1.1",
@@ -69,5 +60,25 @@
     "husky": "^3.1.0",
     "lint-staged": "^9.5.0",
     "prettier": "^1.19.1"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.css": [
+      "stylelint --fix",
+      "git add"
+    ]
+  },
+  "prettier": {
+    "bracketSpacing": false,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   }
 }

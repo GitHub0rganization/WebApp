@@ -1,5 +1,5 @@
-import { MDBCard, MDBCol, MDBIcon, MDBRow } from 'mdbreact'
-import React from 'react'
+import {MDBCard, MDBCol, MDBIcon, MDBRow} from 'mdbreact';
+import React from 'react';
 
 export const Links = () => {
   const data = [
@@ -39,12 +39,12 @@ export const Links = () => {
       provider: 'youtube',
       id: '@irohkiissssssss',
     },
-  ]
+  ];
 
   return (
     <MDBRow>
       <MDBCol md="6">
-        {data.map(data => {
+        {data.map((data) => {
           return (
             <a href={`https://${data.provider}.com`}>
               <MDBCard className="my-3 d-flex flex-row align-items-center round">
@@ -52,15 +52,15 @@ export const Links = () => {
                   src={require(`../../assets/images/${data.provider}.png`)}
                   className="float-left m-3"
                   alt="aligment"
-                  style={{ width: '50px', height: '50px' }}
+                  style={{width: '50px', height: '50px'}}
                 />
                 <p className="m-0">{data.id}</p>
                 <MDBIcon className="text-right" icon="angle-right" />
               </MDBCard>
             </a>
-          )
+          );
         })}
       </MDBCol>
     </MDBRow>
-  )
-}
+  );
+};
