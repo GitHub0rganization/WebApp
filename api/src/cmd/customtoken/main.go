@@ -2,6 +2,7 @@ package main
 
 import (
 	"bytes"
+	"context"
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
@@ -11,7 +12,7 @@ import (
 	"os"
 
 	"github.com/joho/godotenv"
-	// "github.com/voyagegroup/treasure2019-group-c/firebase"
+	"github.com/GitHub0rganization/linqs/firebase"
 )
 
 type FirebaseCustomToken struct {
@@ -52,22 +53,22 @@ func main() {
 		log.Fatal("error loading .env file")
 	}
 
-	// client, err := firebase.InitAuthClient()
-	// if err != nil {
-	// 	log.Fatalf("error getting Auth client: %v\n", err)
-	// }
+	client, err := firebase.InitAuthClient()
+	if err != nil {
+		log.Fatalf("error getting Auth client: %v\n", err)
+	}
 
-	// token, err := client.CustomToken(context.Background(), uid)
-	// if err != nil {
-	// 	log.Fatalf("error minting custom token: %v\n", err)
-	// }
+	token, err := client.CustomToken(context.Background(), uid)
+	if err != nil {
+		log.Fatalf("error minting custom token: %v\n", err)
+	}
 
-	// webapikey := os.Getenv("FIREBASE_WEB_API_KEY")
+	webapikey := os.Getenv("FIREBASE_WEB_API_KEY")
 	endpoint := fmt.Sprintf("https://identitytoolkit.googleapis.com/v1/accounts:signInWithCustomToken")
 
-	// if webapikey == "" {
-	// 	log.Fatal("firebase Web API key is missing")
-	// }
+	if webapikey == "" {
+		log.Fatal("firebase Web API key is missing")
+	}
 
 	body := []byte(fmt.Sprintf(`
 	{
