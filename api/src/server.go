@@ -13,6 +13,7 @@ import (
 	"github.com/justinas/alice"
 
 	"firebase.google.com/go/auth"
+	"github.com/GitHub0rganization/linqs/controller"
 	"github.com/GitHub0rganization/linqs/db"
 	"github.com/GitHub0rganization/linqs/middleware"
 	"github.com/gorilla/mux"
@@ -73,6 +74,9 @@ func (s *Server) Route() *mux.Router {
 
 	r := mux.NewRouter()
 	r.Methods(http.MethodGet).Path("/public").Handler(commonChain.Then(sample.NewPublicHandler()))
+
+	itemTypeController := controller.NewItemTypeController(s.db)
+	r.Methods(http.MethodGet).Path("/item_types").Handler(commonChain.Then(AppHandler{itemTypeController.All}))
 
 	r.PathPrefix("").Handler(commonChain.Then(http.StripPrefix("/img", http.FileServer(http.Dir("./img")))))
 	return r
