@@ -16,19 +16,19 @@ export const Login = () => (
           <div className="d-flex flex-column">
             <MDBBtn
               className="p-2 text-white text-capitalize"
-              color=" light-blue accent-3"
+              // color=" light-blue accent-3"
             >
               <i className="fab fa-twitter pr-2"></i>
               Twitterで登録/ログイン
             </MDBBtn>
             <MDBBtn
               className="p-2 text-white text-capitalize"
-              color=" light-blue darken-4"
+              // color=" light-blue darken-4"
             >
               <i className="fab fa-facebook-f pr-2"></i>
               Facebookで登録/ログイン
             </MDBBtn>
-            <MDBBtn className="p-2 text-black text-capitalize" color="white">
+            <MDBBtn className="p-2 text-black text-capitalize">
               <i className="fab fa-google pr-2"></i>
               Googleで登録/ログイン
             </MDBBtn>
