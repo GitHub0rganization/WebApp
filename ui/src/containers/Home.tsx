@@ -32,7 +32,7 @@ export const Home = () => (
             <a href="/login">
               <MDBBtn
                 className="px-5 py-2 my-3 text-capitalize btn-outline-default waves-effect"
-                color="accent-3"
+                // color="accent-3"
               >
                 はじめる
               </MDBBtn>
@@ -69,7 +69,7 @@ export const Home = () => (
             <a href="/login">
               <MDBBtn
                 className="px-5 py-2 my-3 text-black text-capitalize btn-outline-default waves-effect"
-                color="accent-3"
+                // color="accent-3"
               >
                 はじめる
               </MDBBtn>
