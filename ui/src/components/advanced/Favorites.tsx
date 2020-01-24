@@ -3,7 +3,7 @@ import {MDBRow, MDBCol, MDBCardBody, MDBCardTitle, MDBCardText} from 'mdbreact';
 
 export const Favorites = () => (
   <MDBRow>
-    <MDBCol md="6">
+    <MDBCol sm="12">
       <MDBCardBody>
         <MDBCardTitle>Favorites</MDBCardTitle>
         <MDBCardText>

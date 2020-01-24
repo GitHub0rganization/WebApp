@@ -1,18 +1,15 @@
 import React from 'react';
 import {MDBContainer, MDBCol, MDBRow, MDBCard, MDBCardText} from 'mdbreact';
-import {Navbar} from '../components/advanced/Navbar';
-import {Footer} from '../components/advanced/Footer';
 import {ProfileMidTabs} from '../components/advanced/ProfileMidTabs';
 
 export const User = () => {
   return (
     <React.Fragment>
-      <Navbar />
       <MDBContainer>
         <MDBRow>
-          <MDBCol sm="12" className="m-3 py-3">
+          <MDBCol sm="12" className="py-3">
             <MDBRow>
-              <MDBCol md="6">
+              <MDBCol sm="12">
                 <MDBCard className="card-body p-4 round">
                   <div className="user-image-name d-flex flex-row">
                     <img
@@ -36,7 +33,6 @@ export const User = () => {
           </MDBCol>
         </MDBRow>
       </MDBContainer>
-      <Footer />
     </React.Fragment>
   );
 };

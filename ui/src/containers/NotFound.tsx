@@ -1,11 +1,8 @@
 import React from 'react';
 import {MDBContainer, MDBCol, MDBRow} from 'mdbreact';
-import {Navbar} from '../components/advanced/Navbar';
-import {Footer} from '../components/advanced/Footer';
 
 export const NotFound = () => (
   <React.Fragment>
-    <Navbar />
     <MDBContainer>
       <MDBRow>
         <MDBCol sm="12" className="my-4">
@@ -13,6 +10,5 @@ export const NotFound = () => (
         </MDBCol>
       </MDBRow>
     </MDBContainer>
-    <Footer />
   </React.Fragment>
 );

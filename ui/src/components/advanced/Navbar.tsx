@@ -6,7 +6,9 @@ import {
   MDBNavItem,
   MDBNavLink,
 } from 'mdbreact';
+import Logo from '../../assets/images/linqs.svg';
 import {checkAuth} from '../../services/AuthService';
+import {FontSize} from '../../utils/variables';
 
 export const Navbar = () => {
   const [auth, setAuth] = useState(false);
@@ -20,7 +22,7 @@ export const Navbar = () => {
     <MDBNavbar color="white" expand="sm">
       <MDBNavbarBrand>
         <a href="/">
-          <img src="linqs.svg" alt="linqs" style={{width: '80%'}} />
+          <img src={Logo} alt="linqs" style={{width: '80%'}} />
         </a>
       </MDBNavbarBrand>
       <MDBNavbarNav right className="d-flex flex-row">
@@ -28,21 +30,18 @@ export const Navbar = () => {
           <React.Fragment>
             <MDBNavItem>
               <MDBNavLink to="/username/qrcode" className="black-text">
-                <img
-                  src="qrcode.png"
-                  alt="QR Code"
-                  className="img-fluid"
-                  style={{width: '80%', maxWidth: 500}}
-                />
+                <i
+                  className="fas fa-qrcode"
+                  style={{fontSize: FontSize.X_LARGE}}
+                ></i>
               </MDBNavLink>
             </MDBNavItem>
             <MDBNavItem>
               <MDBNavLink to="/username" className="black-text">
-                <img
-                  src="header-userpage.svg"
-                  alt="QR Code"
-                  className="img-fluid"
-                />
+                <i
+                  className="fas fa-user-circle"
+                  style={{fontSize: FontSize.X_LARGE}}
+                ></i>
               </MDBNavLink>
             </MDBNavItem>
           </React.Fragment>

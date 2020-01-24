@@ -1,11 +1,8 @@
 import {MDBBtn, MDBCol, MDBContainer, MDBRow} from 'mdbreact';
 import React from 'react';
-import {Footer} from '../components/advanced/Footer';
-import {Navbar} from '../components/advanced/Navbar';
 
 export const Home = () => (
   <React.Fragment>
-    <Navbar />
     <MDBContainer>
       <MDBRow>
         <MDBCol sm="12" className="my-4">
@@ -30,10 +27,7 @@ export const Home = () => (
           </div>
           <div className="text-center">
             <a href="/login">
-              <MDBBtn
-                className="px-5 py-2 my-3 text-capitalize btn-outline-default waves-effect"
-                color="accent-3"
-              >
+              <MDBBtn className="px-5 py-2 my-3 text-capitalize btn-outline-default waves-effect">
                 はじめる
               </MDBBtn>
             </a>
@@ -67,10 +61,7 @@ export const Home = () => (
           >
             <h2 className="text-black">ここから</h2>
             <a href="/login">
-              <MDBBtn
-                className="px-5 py-2 my-3 text-black text-capitalize btn-outline-default waves-effect"
-                color="accent-3"
-              >
+              <MDBBtn className="px-5 py-2 my-3 text-black text-capitalize btn-outline-default waves-effect">
                 はじめる
               </MDBBtn>
             </a>
@@ -78,6 +69,5 @@ export const Home = () => (
         </MDBCol>
       </MDBRow>
     </MDBContainer>
-    <Footer />
   </React.Fragment>
 );
