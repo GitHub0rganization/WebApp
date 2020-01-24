@@ -3,6 +3,7 @@ import {Route, Switch} from 'react-router-dom';
 import {Home} from './containers/Home';
 import {Login} from './containers/Login';
 import {User} from './containers/User';
+import {UserEdit} from './containers/UserEdit';
 import {NotFound} from './containers/NotFound';
 import {PrivateRoute} from './containers/PrivateRoute';
 
@@ -11,6 +12,7 @@ const App: React.FC = () => {
     <Switch>
       <Route exact path="/" component={Home} />
       <Route exact path="/login" component={Login} />
+      <Route exact path="/username/edit" component={UserEdit} />
       <Route path="/username" component={User} />
       <Route exact path="/username/favorites" component={User} />
       <Route exact path="/username/links" component={User} />
