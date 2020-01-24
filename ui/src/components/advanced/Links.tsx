@@ -43,7 +43,7 @@ export const Links = () => {
 
   return (
     <MDBRow>
-      <MDBCol md="6">
+      <MDBCol sm="12">
         {data.map((data) => {
           return (
             <a href={`https://${data.provider}.com`}>

@@ -32,7 +32,7 @@ export const PrivateRoute = (props: Props) => {
   }
 
   if (auth) {
-    return <Route path={props.path} component={props.component} />;
+    return <Route exact path={props.path} component={props.component} />;
   } else {
     return <Login />;
   }

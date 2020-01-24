@@ -1,7 +1,26 @@
+body {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
 ul {
     padding-left: 0;
 }
 
 .round {
     border-radius: 10px;
+}
+
+@media screen and (min-width:480px){
+  body {
+    width: 100%;
+    margin: 0 auto;
+  }
+  header {
+    width: 100%;
+  }
+  #footer {
+    width: 100%;
+    right: calc(50% - 200px);
+  }
 }

@@ -14,7 +14,7 @@ import {Links} from './Links';
 export const ProfileMidTabs = () => {
   const [activeItemOuterTabs, setActiveItemOuterTabs] = useState('1');
 
-  const toggleOuterTabs = (tab: any) => (e: any) => {
+  const toggleOuterTabs = (tab: string) => () => {
     if (activeItemOuterTabs !== tab) {
       setActiveItemOuterTabs(tab);
     }
